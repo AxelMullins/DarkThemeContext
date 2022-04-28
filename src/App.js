@@ -1,6 +1,6 @@
-import { useContext } from "react";
 import "./App.css";
-import BtnSwitchTheme from "./components/BtnSwitchTheme";
+import { useContext } from "react";
+import BtnSwitchTheme from "./components/BtnSwitchTheme/BtnSwitchTheme";
 import { AuthProvider } from "./context/AuthContext";
 import { ThemeContext } from "./context/ThemeContext";
 

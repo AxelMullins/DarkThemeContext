@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
-import AuthContext from "../context/AuthContext";
-import { ThemeContext } from "../context/ThemeContext";
+import AuthContext from "../../context/AuthContext";
+import { ThemeContext } from "../../context/ThemeContext";
+import './btnswitchtheme.css'
 
 const BtnSwitchTheme = () => {
   const { theme, switchTheme } = useContext(ThemeContext);
@@ -15,7 +16,7 @@ const BtnSwitchTheme = () => {
         alignItems: "center",
       }}
     >
-      <button onClick={switchTheme}>
+      <button onClick={switchTheme} className="btn">
         Switch to {theme === "light" ? "dark" : "light"} Theme
       </button>
       <button
